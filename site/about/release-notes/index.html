@@ -31,7 +31,7 @@
                 <div class="title">
                     <button class="hamburger"></button>
                     <a href="../.." class="site-name"> Pheasant</a>
-                </div><div class="version">2.5.0</div>
+                </div><div class="version">2.5.2</div>
                 <div class="search">
                     <div role="search">
     <form id="rtd-search-form" class="wy-form" action="../../search.html" method="get">
@@ -92,9 +92,17 @@
 
 <p>You can check your currently installed version using <code>pheasant --version</code>:</p>
 <div class="pheasant-fenced-code"><div class="cell embed terminal"><div class="code"><pre><code class="bash">$ pheasant --version
-pheasant, version 2.2.33 from /path/to/pheasant (Python 3.7)</code></pre></div></div></div>
+pheasant, version 2.5.2 from /path/to/pheasant (Python 3.7)</code></pre></div></div></div>
 
 <h2 id="change-log"><span class="pheasant-header"><span class="header"><span class="title">Change log</span></span></span></h2>
+<h3 id="version-252-2020-05-11"><span class="pheasant-header"><span class="header"><span class="title">Version 2.5.2 (2020-05-11)</span></span></span></h3>
+<ul>
+<li>Default behavior changed: Now, header numbering doesn't occur unless users set it explicitly. To enable numbering, in mkdocs.yaml:</li>
+</ul>
+<div class="pheasant-fenced-code"><div class="cell embed source"><div class="code"><pre><code class="yaml">plugins:
+  - pheasant:
+      nav_number: true</code></pre></div></div></div>
+
 <h3 id="version-242-2020-03-11"><span class="pheasant-header"><span class="header"><span class="title">Version 2.4.2 (2020-03-11)</span></span></span></h3>
 <ul>
 <li>Current directory (<code>os.curdir</code>) of Python jupyter kernel is automatically changed to the directory in which the current page exists.</li>
