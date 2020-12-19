@@ -31,7 +31,7 @@
                 <div class="title">
                     <button class="hamburger"></button>
                     <a href="../.." class="site-name"> Pheasant</a>
-                </div><div class="version">2.5.8</div>
+                </div><div class="version">2.5.9</div>
                 <div class="search">
                     <div role="search">
     <form id="rtd-search-form" class="wy-form" action="../../search.html" method="get">
@@ -42,20 +42,20 @@
             </div>
             <nav class="nav">
                 <ul class="root">
-                    <li class="toctree-l1"><a class="nav-item" href="../..">1 Pheasant Documentation</a></li>
+                    <li class="toctree-l1"><a class="nav-item" href="../..">Pheasant</a></li>
                     <li class="toctree-l1"><button class="section nav-item">User Guide</button>
 <ul class="subnav">
-    <li class="toctree-l2"><a class="nav-item" href="../images/">2 Image</a></li>
-    <li class="toctree-l2"><a class="nav-item" href="../embed/">3 Embeded objects</a></li>
-    <li class="toctree-l2"><a class="nav-item" href="../sympy/">4 SymPy and LaTeX</a></li>
-    <li class="toctree-l2 current"><a class="nav-item current" href="./">5 Standalone Script</a>
+    <li class="toctree-l2"><a class="nav-item" href="../images/">Images</a></li>
+    <li class="toctree-l2"><a class="nav-item" href="../embed/">Embed</a></li>
+    <li class="toctree-l2"><a class="nav-item" href="../sympy/">SymPy</a></li>
+    <li class="toctree-l2 current"><a class="nav-item current" href="./">Script</a>
 <ul class="subnav">
 <li class="toctree-l3"><a class="nav-item toc" href="#51-how-to">5.1 How to</a></li>
 <li class="toctree-l3"><a class="nav-item toc" href="#52-fenced-code-block-in-python-source">5.2 Fenced code block in Python source</a></li>
 <li class="toctree-l3"><a class="nav-item toc" href="#53-a-package-for-comment-formatting">5.3 A package for comment formatting</a></li>
 <li class="toctree-l3"><a class="nav-item toc" href="#54-source-code">5.4 Source code</a></li>
 </ul></li>
-    <li class="toctree-l2"><a class="nav-item" href="../cell/">6 Cell Markers</a></li>
+    <li class="toctree-l2"><a class="nav-item" href="../cell/">Cell</a></li>
     <li class="toctree-l2"><a class="nav-item" href="../kernel/">7 Kernel</a></li>
 </ul></li>
                     <li class="toctree-l1"><button class="section nav-item">About</button>
@@ -99,8 +99,8 @@ def sub(x: int, y: int) -&gt; int:
     &#34;&#34;&#34;Substract `y` from `x`.&#34;&#34;&#34;
     return x - y</code></pre></div>
 <div class="report"><p><span class="count">[1]</span>
-<span class="start">2020-05-27 23:21:19</span> (<span class="time">5.00ms</span>)
-<span class="right"><span class="kernel">python3</span> (<span class="total">1.05s</span>)</span></p></div></div></div></div>
+<span class="start">2020-12-20 08:15:14</span> (<span class="time">10.0ms</span>)
+<span class="right"><span class="kernel">python3</span> (<span class="total">1.55s</span>)</span></p></div></div></div></div>
 
 <p>When a comment starts at the begining of line after a code block, it divides the source into a code cell and a Markdown cell. This new Markdown cell will continue until next Python code appears.</p>
 <p>If you want to include a comment at the begining of line, you can write the comment just above the following codes without a blank line.</p>
@@ -111,8 +111,8 @@ a = 2</code></pre></div></div></div>
 <div class="pheasant-fenced-code"><div class="cached"><div class="cell jupyter input"><div class="code"><pre><code class="python"># First comment in a code cell.
 a = 2</code></pre></div>
 <div class="report"><p><span class="count">[2]</span>
-<span class="start">2020-05-27 23:21:19</span> (<span class="time">4.00ms</span>)
-<span class="right"><span class="kernel">python3</span> (<span class="total">1.06s</span>)</span></p></div></div></div></div>
+<span class="start">2020-12-20 08:15:14</span> (<span class="time">14.0ms</span>)
+<span class="right"><span class="kernel">python3</span> (<span class="total">1.57s</span>)</span></p></div></div></div></div>
 
 <p>Despite of a Markdown cell, you may want to devide successive codes into separate cells. This can be done by putting a special inline comment to define a cell. The comment pattern is <code># -</code>. For example,</p>
 <div class="pheasant-fenced-code"><div class="cell embed source"><div class="code"><pre><code class="python">a, b, c = 1, 2, 3
@@ -124,13 +124,13 @@ b</code></pre></div></div></div>
 <div class="pheasant-fenced-code"><div class="cached"><div class="cell jupyter input"><div class="code"><pre><code class="python">a, b, c = 1, 2, 3
 a</code></pre></div>
 <div class="report"><p><span class="count">[3]</span>
-<span class="start">2020-05-27 23:21:19</span> (<span class="time">4.00ms</span>)
-<span class="right"><span class="kernel">python3</span> (<span class="total">1.06s</span>)</span></p></div></div><div class="cell jupyter output"><div class="code"><pre><code class="nohighlight">1</code></pre></div></div></div></div>
+<span class="start">2020-12-20 08:15:14</span> (<span class="time">7.89ms</span>)
+<span class="right"><span class="kernel">python3</span> (<span class="total">1.57s</span>)</span></p></div></div><div class="cell jupyter output"><div class="code"><pre><code class="nohighlight">1</code></pre></div></div></div></div>
 
 <div class="pheasant-fenced-code"><div class="cached"><div class="cell jupyter input"><div class="code"><pre><code class="python">b</code></pre></div>
 <div class="report"><p><span class="count">[4]</span>
-<span class="start">2020-05-27 23:21:19</span> (<span class="time">3.00ms</span>)
-<span class="right"><span class="kernel">python3</span> (<span class="total">1.06s</span>)</span></p></div></div><div class="cell jupyter output"><div class="code"><pre><code class="nohighlight">2</code></pre></div></div></div></div>
+<span class="start">2020-12-20 08:15:14</span> (<span class="time">13.1ms</span>)
+<span class="right"><span class="kernel">python3</span> (<span class="total">1.59s</span>)</span></p></div></div><div class="cell jupyter output"><div class="code"><pre><code class="nohighlight">2</code></pre></div></div></div></div>
 
 <p>You can add options to a code block by adding them after a cell devider.</p>
 <div class="pheasant-fenced-code"><div class="cell embed source"><div class="code"><pre><code class="python"># -hide
@@ -156,8 +156,8 @@ d = 4
 <p>becomes:</p>
 <div class="pheasant-fenced-code"><div class="cached"><div class="cell jupyter input"><div class="code"><pre><code class="python">print(1)</code></pre></div>
 <div class="report"><p><span class="count">[7]</span>
-<span class="start">2020-05-27 23:21:19</span> (<span class="time">4.00ms</span>)
-<span class="right"><span class="kernel">python3</span> (<span class="total">1.07s</span>)</span></p></div></div><div class="cell jupyter stdout"><div class="code">
+<span class="start">2020-12-20 08:15:14</span> (<span class="time">14.0ms</span>)
+<span class="right"><span class="kernel">python3</span> (<span class="total">1.63s</span>)</span></p></div></div><div class="cell jupyter stdout"><div class="code">
       <pre><code class="nohighlight">1</code></pre></div></div></div></div>
 
 <p>And,</p>

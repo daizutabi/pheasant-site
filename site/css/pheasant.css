@@ -1,24 +1,4 @@
 /**************************************************
- Main
-**************************************************/
-code {
-  color: #069;
-  border: none;
-  font-size: 0.85rem;
-  margin: 0px;
-  padding: 0px;
-}
-
-p {
-  margin-bottom: 10px;
-}
-
-h2, h3, h4, h5 {
-  margin-top: 20px;
-  margin-bottom: 10px;
-}
-
-/**************************************************
  Numbering style
 **************************************************/
 .pheasant-header .header .number {
@@ -48,7 +28,7 @@ h2, h3, h4, h5 {
 .pheasant-header div.figure p.caption,
 .pheasant-header div.table p.caption,
 .pheasant-header div.other p.caption {
-  font-size: 0.95rem;
+  font-size: 95%;
   font-style: normal;
 }
 
@@ -114,7 +94,7 @@ h2, h3, h4, h5 {
   content: "";
   position: absolute;
   left: -2.6em;
-  font-size: 0.8rem;
+  font-size: 80%;
   width: 2.3em;
   text-align: right;
   margin-top: 3px;
